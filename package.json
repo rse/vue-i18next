@@ -1,0 +1,31 @@
+{
+    "name":        "vue-i18next",
+    "version":     "0.9.0",
+    "description": "Vue plugin for i18next integration",
+    "keywords": [
+        "vue", "plugin", "I18N", "i18next"
+    ],
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/rse/vue-i18next.git"
+    },
+    "author": {
+        "name":  "Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url":   "http://engelschall.com"
+    },
+    "license":  "MIT",
+    "homepage": "https://github.com/rse/vue-i18next",
+    "bugs":     "https://github.com/rse/vue-i18next/issues",
+    "dependencies": {
+    },
+    "peerDependencies": {
+        "vue":        "*",
+        "vue-params": "*",
+        "i18next":    "*"
+    },
+    "scripts": {
+        "prepublish": "jshint vue-i18next.js"
+    },
+    "main": "vue-i18next.js"
+}

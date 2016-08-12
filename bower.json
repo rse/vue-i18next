@@ -1,0 +1,23 @@
+{
+    "name":        "vue-i18next",
+    "version":     "0.9.0",
+    "description": "Vue plugin for i18next integration",
+    "main":        "vue-i18next.js",
+    "homepage":    "https://github.com/rse/vue-i18next",
+    "license":     "MIT",
+    "authors": [
+        "Ralf S. Engelschall <rse@engelschall.com>"
+    ],
+    "keywords": [
+        "vue", "plugin", "I18N", "i18next"
+    ],
+    "dependencies": {
+        "vue":        "latest",
+        "vue-params": "latest",
+        "i18next":    "latest"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules"
+    ]
+}
