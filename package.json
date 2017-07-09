@@ -1,6 +1,6 @@
 {
     "name":        "vue-i18next",
-    "version":     "0.9.0",
+    "version":     "0.9.1",
     "description": "Vue plugin for I18Next integration",
     "keywords": [
         "vue", "plugin", "I18N", "i18next"
