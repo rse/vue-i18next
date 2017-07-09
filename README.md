@@ -13,26 +13,28 @@ Vue plugin for integrating I18Next.
 About
 -----
 
-This is an plugin for the [Vue](http://vuejs.org) view data-binding
-library, integrating the [I18Next](http://i18next.com) library.
-It provides a global `Vue.t()` and a local `$t()` method which
+This is a plugin for the [Vue](http://vuejs.org) view data-binding
+library, integrating the [I18Next](http://i18next.com) internationalization library.
+It provides a global `Vue.t()` function and a local `$t()` function which
 passes-through to `i18next.t()` with the exception that the global
 Vue parameter `i18nextLanguage` is passed to `i18next.t()` as option
 `lng` and for `$t()` the local Vue option `i18nextNamespace` is
 passed to `i18next.t()` as option `ns`. As this plugin is based
-on [vue-params](https://github.com/rse/vue-params), the language
-change can be altered at any time by assigning to the variable
-`Vue.params.i18nextLanguage`. As a result the data-bindings will
+on [vue-params](https://github.com/rse/vue-params), the target language
+can be altered at any time by assigning to the variable
+`Vue.params.i18nextLanguage`. As a result, the data-bindings will
 be forced to update by [vue-params](https://github.com/rse/vue-params).
 
 Usage
 -----
 
 ```shell
+# install necessary packages
 $ npm install vue vue-params vue-i18next
 ```
 
 ```js
+/* initial setup */
 Vue.use(VueParams)
 Vue.use(VueI18Next)
 Vue.params.i18nextLanguage = "en"
@@ -40,11 +42,13 @@ i18next.init({ lng: Vue.params.i18nextLanguage, ... })
 ```
 
 ```js
+/* usage in global context */
 Vue.t("foo")
 Vue.t("bar.baz", { lng: "de", ns: "quux" })
 ```
 
 ```js
+/* setup a view data-binding */
 new vue = new Vue({
     el: $("#sample"),
     i18nextNamespace: "quux"
@@ -52,6 +56,7 @@ new vue = new Vue({
 ```
 
 ```html
+<!-- usage in local context -->
 <div id="sample">
     {{ $t("foo") }}
     {{ $t("bar.baz", { lng: "de", ns: "quux" }) }}
