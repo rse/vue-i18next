@@ -6,7 +6,7 @@
     "homepage":    "https://github.com/rse/vue-i18next",
     "license":     "MIT",
     "authors": [
-        "Ralf S. Engelschall <rse@engelschall.com>"
+        "Dr. Ralf S. Engelschall <rse@engelschall.com>"
     ],
     "keywords": [
         "vue", "plugin", "I18N", "i18next"
